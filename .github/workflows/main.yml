@@ -46,7 +46,7 @@ jobs:
            with:
                  status: ${{ job.status }}
                  steps: ${{ toJson(steps) }}
-                 channel: '#git_action_notification'
+                 channel: '#pramodsingh'
                  message: Integration {{ env.GITHUB_REF_NAME }} branch Successfully
            if: always() 
 
@@ -79,6 +79,6 @@ jobs:
            with:
                  status: ${{ job.status }}
                  steps: ${{ toJson(steps) }}
-                 channel: '#git_action_notification'
+                 channel: '#pramodsingh'
                  message: Deployed {{ env.GITHUB_REF_NAME }} branch Successfully
            if: always() 
