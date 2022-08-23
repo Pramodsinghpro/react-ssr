@@ -9,7 +9,7 @@
 name: CI-CD-Pipeline-to-AWS-ElasticBeanstalk
 env:
   SLACK_WEBHOOK_URL         : ${{ secrets.SLACK_WEBHOOK_URL }}
-  EB_PACKAGE_S3_BUCKET_NAME : "git-cicd-nodejs"
+  EB_PACKAGE_S3_BUCKET_NAME : "git-cicds"
   EB_APPLICATION_NAME       : "Node-js"
   EB_ENVIRONMENT_NAME       : "Nodejs-env"
   DEPLOY_PACKAGE_NAME       : "nodejs-app-${{ github.sha }}.zip"
